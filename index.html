@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For you Only, Cimri❤️</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #36393f;
+            color: #ffffff;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-height: 70vh;
+            overflow-y: auto;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            background-color: #2f3136;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 10px;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 576px) {
+            p {
+                font-size: 12px;
+            }
+
+            h1, h2, h3 {
+                font-size: 1.2rem;
+            }
+
+            .container {
+                max-height: 60vh;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <h2 class="display-4">Love Chain for Dear Cimri❤️</h1>
+    </div>
+    
+    <div class="container container-fluid">
+        <p id="love-chain"></p>
+    </div>
+
+    <div class="container-fluid text-center">
+        <h2>by Varnit❤️</h2>
+        <h3>try scrolling till the end ;)</h3>
+    </div>
+
+    <!-- Bootstrap and JavaScript dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        function generateLoveChain() {
+            let chain = "";
+            for (let i = 1; i <= 9999; i++) {
+                chain += `I love u ${i}%, Cimri❤️<br>`;
+            }
+            chain += `I LOVE U 10000%, CIMRI❤️❤️❤️ <br>`;
+            chain += `I can make it even longer if u can scroll by it ;) <br>`;
+            return chain;
+        }
+
+        document.getElementById('love-chain').innerHTML = generateLoveChain();
+    </script>
+</body>
+
+</html>
+
+
